@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
+#import "FLWebViewProvider.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIWebViewDelegate, WKNavigationDelegate, WKUIDelegate>
 
+@property (nonatomic) UIView <FLWebViewProvider> *webView;
 
 @end
 

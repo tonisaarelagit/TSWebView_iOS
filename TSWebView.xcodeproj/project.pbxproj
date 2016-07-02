@@ -16,6 +16,8 @@
 		09724D451D27540A00A175A2 /* TSWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09724D441D27540A00A175A2 /* TSWebViewTests.m */; };
 		09724D501D27540A00A175A2 /* TSWebViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09724D4F1D27540A00A175A2 /* TSWebViewUITests.m */; };
 		09724D5E1D27549F00A175A2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09724D5D1D27549F00A175A2 /* WebKit.framework */; };
+		09724D761D2759E600A175A2 /* UIWebView+FLUIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09724D731D2759E600A175A2 /* UIWebView+FLUIWebView.m */; };
+		09724D771D2759E600A175A2 /* WKWebView+FLWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09724D751D2759E600A175A2 /* WKWebView+FLWKWebView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,11 @@
 		09724D4F1D27540A00A175A2 /* TSWebViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSWebViewUITests.m; sourceTree = "<group>"; };
 		09724D511D27540A00A175A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09724D5D1D27549F00A175A2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		09724D721D2759E600A175A2 /* UIWebView+FLUIWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+FLUIWebView.h"; sourceTree = "<group>"; };
+		09724D731D2759E600A175A2 /* UIWebView+FLUIWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+FLUIWebView.m"; sourceTree = "<group>"; };
+		09724D741D2759E600A175A2 /* WKWebView+FLWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+FLWKWebView.h"; sourceTree = "<group>"; };
+		09724D751D2759E600A175A2 /* WKWebView+FLWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+FLWKWebView.m"; sourceTree = "<group>"; };
+		09724D791D2759F300A175A2 /* FLWebViewProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLWebViewProvider.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +112,8 @@
 		09724D291D27540A00A175A2 /* TSWebView */ = {
 			isa = PBXGroup;
 			children = (
+				09724D781D2759E900A175A2 /* Protocols */,
+				09724D711D2759DE00A175A2 /* Categories */,
 				09724D2D1D27540A00A175A2 /* AppDelegate.h */,
 				09724D2E1D27540A00A175A2 /* AppDelegate.m */,
 				09724D301D27540A00A175A2 /* ViewController.h */,
@@ -142,6 +151,25 @@
 				09724D511D27540A00A175A2 /* Info.plist */,
 			);
 			path = TSWebViewUITests;
+			sourceTree = "<group>";
+		};
+		09724D711D2759DE00A175A2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				09724D721D2759E600A175A2 /* UIWebView+FLUIWebView.h */,
+				09724D731D2759E600A175A2 /* UIWebView+FLUIWebView.m */,
+				09724D741D2759E600A175A2 /* WKWebView+FLWKWebView.h */,
+				09724D751D2759E600A175A2 /* WKWebView+FLWKWebView.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		09724D781D2759E900A175A2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				09724D791D2759F300A175A2 /* FLWebViewProvider.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +303,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				09724D321D27540A00A175A2 /* ViewController.m in Sources */,
+				09724D761D2759E600A175A2 /* UIWebView+FLUIWebView.m in Sources */,
+				09724D771D2759E600A175A2 /* WKWebView+FLWKWebView.m in Sources */,
 				09724D2F1D27540A00A175A2 /* AppDelegate.m in Sources */,
 				09724D2C1D27540A00A175A2 /* main.m in Sources */,
 			);
